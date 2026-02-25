@@ -51,11 +51,13 @@ We are looking for a talented and highly motivated **Full Stack Developer** to j
 
 - **Objective:** Showcase your technical skills by solving a code challenge.
 - **Action:**
-  - Clone our repository.
-  - Solve one of the challenges located in the `/challenges` folder.
-  - Submit your solution as a submodule inside the `/solutions` directory.
+  - Fork our repository to your own GitHub account.
+  - Solve **one** of the challenges located in the `/challenges` folder.
+  - Add your solution **directly inside the `/solutions` directory** in your fork.
+  - Commit and push your changes to your fork.
+  - Send us the **link to your forked repository**.
 - **Outcome:** Demonstrate your problem-solving abilities and proficiency with the required technologies.
-
+  
 ## 2. Solution Review
 
 - **Objective:** Discuss your approach and solution with our team.
