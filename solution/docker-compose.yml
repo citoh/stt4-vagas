@@ -1,0 +1,5 @@
+services:
+  mars-rover:
+    build: .
+    container_name: stt4-vagas
+    command: ["npm", "test"]
