@@ -2,11 +2,11 @@ const { Grid } = require("../domain/map/Grid");
 const { Position } = require("../domain/core/Position");
 const { Orientation } = require("../domain/core/Orientation");
 const { Rover } = require("../domain/rover/Rover");
-const { NavigationPolicy } = require("../domain/navigation/NavigationPolicy");
+const { NavigationEngine } = require("../domain/navigation/NavigationEngine");
 
 class ExecuteRoverCommands {
     constructor(deps = {}) {
-        this.navigationPolicy = deps.navigationPolicy ?? new NavigationPolicy();
+        this.NavigationEngine = deps.NavigationEngine ?? new NavigationEngine();
     }
 
     async run(input) {
@@ -17,7 +17,7 @@ class ExecuteRoverCommands {
             grid,
             position: new Position(input.initialPosition.x, input.initialPosition.y),
             orientation: new Orientation(input.initialOrientation),
-            navigation: this.navigationPolicy,
+            navigation: this.NavigationEngine,
         });
 
         for (const cmd of commands) {

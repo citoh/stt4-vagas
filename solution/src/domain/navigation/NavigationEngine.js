@@ -1,4 +1,4 @@
-class NavigationPolicy {
+class NavigationEngine {
   move(pos, ori, command, sensors) {
     if (command === "F") {
       if (sensors.frontIsFree(pos, ori)) {
@@ -56,4 +56,4 @@ class NavigationPolicy {
   }
 }
 
-module.exports = { NavigationPolicy };
+module.exports = { NavigationEngine };
